@@ -126,18 +126,20 @@ const Horoscope = () => {
     }
     const [popUpToggle, setPopUpToggle] = useState(false);
   return (
-    <div className='lg:ml-[10px] lg:mt-[62px] md:ml-[16px] '>
+    <div className='lg:px-[60px] lg:py-[30px] md:px-[40px] '>
            <h2 className= "text-amber-900 text-[26px] font-medium font-['Lexend'] heading">View your Horoscope</h2>
-            <div className='container  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6  mt-[39px]'>
+            <div className='container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 pt-[39px]'>
                 {
                     signs.map((sign, index)=>{
                         return(
                             <>
+                            <div className='py-[10px]'>
                             <div className='signCard w-[212px] h-[212px] bg-white rounded-[5px] shadow-inner border border-neutral-400 border-opacity-50 
-                            flex flex-col justify-center items-center mr-5 mb-5'  key={sign.index}  onClick={()=> changeContent(sign)} >
-                              <img src={sign.sign} className="sign"/>
-                              <p className="signName text-black text-base font-normal font-['Poppins'] tracking-tight mt-[22px]">{sign.signName}</p>
-                              <p className="time text-black text-base font-bold font-['Lexend'] tracking-tight mt-[9px]">{sign.time}</p>
+                            flex flex-col justify-center items-center '  key={sign.index}  onClick={()=> changeContent(sign)} >
+                              <img src={sign.sign} className="sign py-[5px]"/>
+                              <p className="signName text-black text-[16px] font-normal font-['Poppins'] tracking-tight py-[12px]">{sign.signName}</p>
+                              <p className="time text-black text-[16px] font-bold font-['Lexend'] tracking-tight">{sign.time}</p>
+                            </div>
                             </div>
                             </>
                         )
@@ -152,14 +154,16 @@ const Horoscope = () => {
             <div className="w-[45px] h-[45px] bg-gray-100 rounded-full flex justify-center items-center absolute -top-4 -right-[16px] bottom-0 " onClick={changeContent}>
                <CloseIcon className='w-6 h-6'/>
             </div>
-            <p className="nameDate text-amber-900 lg:text-xl md:text-base font-semibold font-['Lexend'] tracking-tight lg:ml-[39px] lg:pt-[31px] md:ml-[24px] md:pt-[18px]">{pop.name}</p>
-            <div className='signDetails flex'>
-                <div className='img flex justify-center items-center lg:w-[225px] lg:h-[225px] md:w-[140px] md:h-[140px] bg-gray-100 rounded-md border border-neutral-400 lg:mt-[57px] lg:ml-[75px] md:mt-[20px] md:ml-[24px]'>
-            <img src={pop.img2} className='lg:w-4/5 lg:h-3/5  md:w-[2/5] md:h-[1/5]'/>
+            <p className="nameDate text-amber-900 lg:text-[20px] md:text-[16px] font-semibold font-['Lexend'] tracking-tight lg:px-[39px] lg:py-[30px] md:px-[24px] md:py-[9px]">{pop.name}</p>
+            <div className='signDetails flex lg:py-[16px] md:pt-[8px] lg:px-[70px] md:px-[35px]'>
+                <div className='lg:pr-[40px] md:pr-[20px]'>
+                <div className='img flex justify-center items-center lg:w-[225px] lg:h-[225px] md:w-[140px] md:h-[140px]  bg-gray-100 rounded-md border border-neutral-400 '>
+                   <img src={pop.img2} className='lg:w-4/5 lg:h-3/5  md:w-[2/5] md:h-[1/5]'/>
+                </div>
+                </div>
+            <p className=" lg:w-[960px] lg:h-[248px] md:w-[450px] md:h-[110px] md:overflow-ellipsis md:overflow-hidden text-neutral-700 lg:text-[14px] md:text-[12px]   lg:font-medium  md:font-normal font-['Poppins'] lg:leading-[24.85px] tracking-tight">{pop.horoscope}</p>
             </div>
-            <p className="lg:mt-[52px] lg:ml-[43px] lg:w-[960px] lg:h-[248px] md:w-[450px] md:h-[110px] md:overflow-ellipsis md:overflow-hidden text-neutral-700 lg:text-sm md:text-xs md:ml-[30px] md:mt-[20px]  lg:font-medium  md:font-normal font-['Poppins'] lg:leading-[24.85px] tracking-tight">{pop.horoscope}</p>
-            </div>
-            <p className="link text-amber-500 lg:text-lg md:text-base lg:font-semibold md:font-medium font-['Lexend'] underline lg:ml-[343px] lg:mt-[2px] md:ml-[190px] md:mt-[-22px]">{pop.link}<ArrowForwardIcon className="text-amber-500 lg:text-lg md:text-base lg:font-semibold md:font-medium font-['Inter'] underline"/></p>
+            <p className="link text-amber-500 lg:text-[18px] md:text-[14px] lg:font-semibold md:font-medium font-['Lexend'] underline lg:px-[336px] md:px-[194px]">{pop.link}<ArrowForwardIcon className="text-amber-500 lg:text-lg md:text-base lg:font-semibold md:font-medium font-['Inter'] underline"/></p>
             </div>
            </div>
                 )

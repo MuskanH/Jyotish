@@ -24,4 +24,4 @@ const useCartContext = () =>{
     return useContext(CartContext);
 };
 
-export {CartProvider, useCartContext}
+export { CartProvider, useCartContext }

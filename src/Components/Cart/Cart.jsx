@@ -32,7 +32,7 @@ const Cart = () => {
     return (
         <div>
             {/* STEPPER COMPONENT START*/}
-            <div className='Stepper flex justify-center items-center mt-[34px]'>
+            <div className='Stepper flex justify-center items-center py-[34px]'>
            {
            
             stepArray.map((v,i)=><>
@@ -58,7 +58,7 @@ const Cart = () => {
            </div>
              {/* STEPPER COMPONENT END*/}
             {stepNo === 1 && <div className='Cart'>
-            <p className="text-amber-900 text-[26px] font-medium lg:ml-[70px] md:ml-[40px] lg:mt-[74px] md:mt-[40px] font-['Lexend']">Your Cart</p>
+            <p className="text-amber-900 text-[26px] font-medium lg:px-[70px] md:px-[40px] lg:pt-[74px] md:py-[10px] font-['Lexend']">Your Cart</p>
             <div className="lg:flex md:flex md:flex-col lg:flex-row container">
                 <div className='cardsContainer flex flex-col'>
                     {cart.map(({ image, title, customers, tagline, price }, index)=>{
@@ -116,54 +116,61 @@ const Cart = () => {
                    
                 </div>
 
-                <div className='flex flex-col lg:mt-[21px] md:mt-[54px] lg:ml-[20px] md:mx-auto'>
+                <div className='flex flex-col lg:pt-[21px] md:pt-[54px] lg:ml-[20px] md:mx-auto'>
 
-                    <div className="Promo w-[444px] h-[68px] bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80">
-                        <div className="w-[419px] h-[45px] relative mt-[12px] ml-[13px]">
-                            <input placeholder='Promo Code' class="w-[419px] h-[45px] pl-[28px] left-0 top-0 absolute bg-white rounded-md shadow text-neutral-400 text-base font-normal font-['Lexend'] tracking-wide"></input>
+                    <div className="Promo w-[444px] h-[68px] bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80 py-[12px] px-[10px]">
+                        <div className="w-[419px] h-[45px] relative">
+                            <input placeholder='Promo Code' class="w-[419px] h-[45px] pl-[28px] left-0 top-0 absolute bg-white rounded-md shadow text-neutral-400 text-[16px] font-normal font-['Lexend'] tracking-wide"></input>
                             <div className="w-[104px] h-[45px] left-[315px] top-0 absolute bg-cyan-500 rounded-tr-md rounded-br-md"></div>
-                            <button className="left-[341px] top-[10px] absolute text-white text-base font-semibold font-['Poppins'] tracking-wide">Apply</button>
+                            <button className="left-[341px] top-[10px] absolute text-white text-[16px] font-semibold font-['Poppins'] tracking-wide">Apply</button>
                         </div>
                     </div>
 
-                    <div className="Order w-[444px] h-[355px] mt-[15px] bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80">
-                        <p className="mt-[22px] ml-[21px] text-neutral-700 text-xl font-semibold font-['Lexend']">Order Summary</p>
-                        <div className="Box mt-[27px] ml-[13px] w-[419px] h-[206px] bg-white rounded-[10px]">
-                            <div className='Info flex'>
-                                <div className='QTY flex flex-col mt-[22px]'>
-                                    <p className=" text-neutral-700 text-lg font-medium font-['Poppins'] ml-[21px]">Qty</p>
-                                    <p className=" text-neutral-700 text-base font-medium font-['Poppins'] ml-[35px] mt-[28px]">1</p>
+
+                    <div className='py-[15px]'>
+                    <div className="Order w-[444px] h-[355px]  bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80">
+                        <p className="py-[22px] px-[21px] text-neutral-700 text-[20px] font-semibold font-['Lexend']">Order Summary</p>
+                        <div className='px-[10px]'>
+                        <div className="Box  w-[419px] h-[206px] bg-white rounded-[10px]">
+                            <div className='Info flex px-[10px]'>
+                                <div className='QTY flex flex-col py-[10px]'>
+                                    <p className=" text-neutral-700 text-[18px] font-medium font-['Poppins'] px-[20px]">Qty</p>
+                                    <p className=" text-neutral-700 text-[16px] font-medium font-['Poppins'] py-[16px] px-[30px]">1</p>
                                 </div>
-                                <div className='Product flex flex-col mt-[22px]'>
-                                    <p className=" text-neutral-700 text-lg font-medium font-['Poppins'] ml-[40px]">Product</p>
-                                    <p className=" text-neutral-400 text-base font-normal font-['Poppins'] tracking-tight ml-[40px] mt-[28px]">1 Mukhi Rudraksha</p>
+                                <div className='Product flex flex-col py-[10px]'>
+                                    <p className=" text-neutral-700  text-[18px] font-medium font-['Poppins'] px-[30px]">Product</p>
+                                    <p className=" text-neutral-400 text-[16px] font-normal font-['Poppins'] tracking-tight px-[30px] py-[16px] ">1 Mukhi Rudraksha</p>
                                 </div>
-                                <div className='Price flex flex-col mt-[22px]'>
-                                    <p className=" text-neutral-700 text-lg font-medium font-['Poppins'] ml-[96px]">Price</p>
-                                    <p className=" text-neutral-400 text-base font-normal font-['Poppins'] tracking-tight ml-[96px] mt-[28px]">8999 INR</p>
+                                <div className='Price flex flex-col py-[10px] '>
+                                    <p className=" text-neutral-700  text-[18px] font-medium font-['Poppins'] px-[40px]">Price</p>
+                                    <p className=" text-neutral-400 text-[16px] font-normal font-['Poppins'] tracking-tight py-[16px] pl-[38px]">8999 INR</p>
                                 </div>
                             </div>
-                            <p className=" text-neutral-700 text-lg font-semibold font-['Inter'] mt-[28px] ml-[338px]">1 Item</p>
-                            <hr className='ml-[20px] mr-[20px] mt-[5px]'></hr>
+                            <p className=" text-neutral-700 text-[18px] font-semibold font-['Inter'] py-[12px] pl-[338px]">1 Item</p>
+                            <hr className='mx-[20px] py-[2px]'></hr>
                              <div className='Total flex'>
-                               <p className="ml-[21px] mt-[12px] text-neutral-700 text-xl font-semibold font-['Poppins']">Total</p>
-                               <p className="ml-[230px] mt-[12px] text-neutral-700 text-xl font-semibold font-['Inter']">8999 INR</p>
+                               <p className="px-[21px] py-[8px] text-neutral-700 text-[20px] font-semibold font-['Poppins']">Total</p>
+                               <p className="pl-[215px] py-[8px] text-neutral-700 text-[18px] font-semibold font-['Inter']">8999 INR</p>
                             </div>
                         </div>
-                        <button className="w-[395px] h-[50px] mt-[10px] ml-[24.5px] pl-[120px] pr-28 py-[15px] bg-cyan-500 rounded-[9px] shadow text-white text-base font-semibold font-['Lexend']" onClick={next}>
+                        </div>
+                        <div className=' py-[12px] px-[24px]'>
+                        <button className="w-[395px] h-[50px] pl-[120px] pr-28 py-[15px] bg-cyan-500 rounded-[9px] shadow text-white text-[16px] font-semibold font-['Lexend']" onClick={next}>
                            Go To Billing <EastIcon/>
                         </button>
+                        </div>
+                    </div>
                     </div>
 
-                    <div className="Payment w-[443px] h-[188px] mt-[18px] bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80">
-                        <p className=" text-neutral-700 text-xl font-semibold font-['Lexend'] mt-[22px] ml-[20px]">Accepted Payment Methods</p>
-                        <div className='flex flex-wrap gap-[30px] mt-[40px]'>
-                            <img src='/img/visa.svg' className='ml-[20px]'/>
+                    <div className="Payment w-[443px] h-[188px]  bg-neutral-50 rounded-[10px] border border-stone-300 border-opacity-80">
+                        <p className=" text-neutral-700 text-[20px] font-semibold font-['Lexend'] py-[12px] px-[20px]">Accepted Payment Methods</p>
+                        <div className='flex flex-wrap gap-[30px] py-[10px]'>
+                            <img src='/img/visa.svg' className='pl-[20px]'/>
                             <img src='/img/mastercard.svg'/>
                             <img src='/img/maestro.svg'/>
                             <img src='/img/discover.svg'/>
                             <img src='/img/cirrus.svg'/>
-                            <img src='/img/jcb.svg' className='ml-[20px]'/>
+                            <img src='/img/jcb.svg' className='pl-[20px]'/>
                             <img src='/img/paypal.svg'/>
                         </div>
                     </div>

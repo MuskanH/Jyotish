@@ -12,6 +12,7 @@ import BookAPooja from './Components/BookPooja/BookAPooja';
 import Pooja from './Components/Manokamna pooja/Pooja';
 import Cart from './Components/Cart/Cart'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CartProvider } from './Components/cart_content';
 
 
 
@@ -19,21 +20,28 @@ function App() {
   return (
     <>
     {/* <Nav/> */}
-   <Router> <Routes> <Route path="/products" element={<Report/>} /> 
-   <Route path="/cart" element={ <Cart/> } /> 
-    {/* <Horoscope/>
-    <Blogs/>
-    <BlogDetails/>
-    <Daily/>
-    
-    <Report24/>
-    <BookAPooja/>
-    <Pooja/> 
-   */}
-    </Routes>
-    </Router>
+   <Router>
+   <Routes>
+    <Route path='/report' element={<Report/>}/>
+    <Route path='/cart' element={<Cart/>}/>
+   </Routes>
+   </Router>
+   {/* <Report/>  */}
+   {/* <Cart/> */}
+  
+  
+   {/* <Testimonial/> */}
    
-    </>
+    {/* <Horoscope/> */}
+    <Blogs/>
+    {/* <BlogDetails/> */}
+    
+    
+    {/* <Report24/> */}
+    {/* <BookAPooja/> */}
+    
+  
+   </>
   )
 }
 

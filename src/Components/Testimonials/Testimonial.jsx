@@ -91,7 +91,7 @@ const Testimonial = () => {
                         return (
                            
                             <SwiperSlide>
-                                <div className= "card flex flex-col w-[328px] h-[200px] bg-white rounded-md shadow border border-stone-300 border-opacity-80 ml-5 boxShadow: 0px 4px 10px rgba(174.25, 174.25, 174.25, 0.25)" key={index}> 
+                                <div className= " flex flex-col w-[328px] h-[200px] bg-white rounded-md shadow border border-stone-300 border-opacity-80 ml-5 boxShadow: 0px 4px 10px rgba(174.25, 174.25, 174.25, 0.25)" key={index}> 
                                     <p className= " review w-[292px] text-neutral-700 text-sm font-normal font-['Poppins'] mt-4 ml-5">{review}</p>
                                     <div className='ratings flex flex-row mt-2 ml-5'>
                         
