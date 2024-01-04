@@ -114,26 +114,28 @@ const BookAPooja = () => {
       {/* HEADING & SEARCH BAR END*/}
 
       {/* POOJA CARDS START*/}
-      <div className='grid lg:grid-rows-3 lg:grid-cols-3 md:grid md:grid-cols-2 md:grid-rows-5  lg:px-[70px] md:px-[30px]'>
+       
+      <div className='flex flex-row justify-between items-center flex-wrap lg:px-[70px] md:px-[30px]'>
+       
       {filteredPooja.map(({ img, pooja, info, date, astroImg, astroName}, index)=>{
       return(
         
-        <div className='py-[10px]'>
-        <div className="card lg:w-[444px] lg:h-[220px] md:w-[340px] md:h-[176px] bg-white rounded-md shadow" key={index}>
-         <div className='details flex'> 
+        <div className='py-[10px] '>
+        <div className="lg:w-[444px] lg:h-[220px] md:w-[340px] md:h-[176px] bg-white rounded-md shadow" key={index}>
+         <div className='flex'> 
 
-          <div className='img md:flex md:items-center lg:px-[20px] md:px-[14px]'>
+          <div className='md:flex md:items-center lg:px-[20px] md:px-[14px]'>
            <img src={img} className='lg:w-[157px] lg:h-[157px] md:w-[122px] md:h-[122px] lg:rounded-md md:rounded border-4 border-stone-300 border-opacity-80 '/>
           </div>
            
-           <div className='info flex flex-col'>
+           <div className=' flex flex-col'>
             <div>
              <p className="text-neutral-700 lg:text-[18px] md:text-[16px] lg:font-medium md:font-normal font-['Lexend']  lg:pt-[20px]  md:pt-[12px]">{pooja}</p>
              <p className="lg:w-[231px] md:w-[180px] text-neutral-700 lg:text-[14px] md:text-[12px] lg:font-normal md:font-light font-['Poppins'] leading-[18px] lg:py-[6px] md:py-[3px] ">{info}</p>
-             <p className="date "><span className="text-neutral-700 lg:text-[13px] md:text-[10px] lg:font-semibold md:font-medium font-['Lexend'] tracking-wide">Date : </span><span className="text-black lg:text-[13px] md:text-[10px] lg:font-normal md:font-light font-['Poppins'] tracking-wide">{date}</span></p>
+             <p className=""><span className="text-neutral-700 lg:text-[13px] md:text-[10px] lg:font-semibold md:font-medium font-['Lexend'] tracking-wide">Date : </span><span className="text-black lg:text-[13px] md:text-[10px] lg:font-normal md:font-light font-['Poppins'] tracking-wide">{date}</span></p>
             </div>
 
-            <div className='astro flex lg:py-[6px] md:py-[3px]'>
+            <div className=' flex lg:py-[6px] md:py-[3px]'>
               <img src={astroImg} className="lg:w-[35px] lg:h-[35px] md:w-[27px] md:h-[27px] relative lg:rounded-[30px] md:rounded-[23px] "/>
               <p className="text-neutral-700 lg:text-[14px] md:text-[12px] lg:font-normal md:font-light font-['Poppins'] leading-[18px] lg:py-[6px] lg:pl-[10px] md:py-[3px] md:pl-[5px]">{astroName}</p>
             </div> 
@@ -149,22 +151,23 @@ const BookAPooja = () => {
       )
      })
      }
-      </div>
+     </div>
+     
       {/* POOJA CARDS END */}
 
       {/* CONTENT STARTS */}
       <div className='lg:px-[70px] md:px-[30px] pt-[24px]'>
-      <p className="lg:w-[1372px] md:w-[688px] text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide">Puja is an ancient Hindu ritual, 
+      <p className=" text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide">Puja is an ancient Hindu ritual, 
       a sacred act of worshiping the divine. It is a medium through which we connect with the divine energies to seek blessings, express gratitude, and make our wishes and prayers heard. We help you to experience divine blessings and spiritual harmony with our exclusive online puja services, conducted by learned pandits and astrologers. Whether you seek remedial measures, enhanced relationships, luck, 
       financial prosperity, or a blissful marriage, our pujas cater to various aspects of life for your overall well-being..</p>
-      <p className="lg:w-[1372px] md:w-[688px] text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[10px]">The credit for astrology and the predictions we make here being so accurate goes to the 100s of learned and astrologically-versed astrologers we have on board. And to answer what makes astrology so accurate, then it is the pure knowledge of our astrologers about the planets, planetary 
+      <p className=" text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[10px]">The credit for astrology and the predictions we make here being so accurate goes to the 100s of learned and astrologically-versed astrologers we have on board. And to answer what makes astrology so accurate, then it is the pure knowledge of our astrologers about the planets, planetary 
       configurations, constellations and learning of how they influence human life and behaviour as they move, shift or even stay still. </p>
-      <p className="lg:w-[1372px] md:w-[688px] text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">Astrologically-versed astrologers we have on board, 
+      <p className=" text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">Astrologically-versed astrologers we have on board, 
       And to answer what makes astrology so accurate.</p>
-      <p className="lg:w-[1372px] md:w-[688px]  text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">The credit for astrology and the predictions we 
+      <p className="  text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">The credit for astrology and the predictions we 
       make here being so accurate goes to the 100s of learned and astrologically-versed astrologers we have on board.
       And to answer what makes astrology so accurate.</p>
-      <p className="lg:w-[1372px] md:w-[688px]  text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">The credit for astrology and the predictions we make here being so accurate goes to the 100s of learned and astrologically-versed astrologers we have on board. And to answer what makes astrology so accurate, then it is the pure knowledge of our astrologers about the planets, planetary
+      <p className="  text-neutral-700 text-[16px] font-normal font-['Poppins'] leading-7 tracking-wide py-[5px]">The credit for astrology and the predictions we make here being so accurate goes to the 100s of learned and astrologically-versed astrologers we have on board. And to answer what makes astrology so accurate, then it is the pure knowledge of our astrologers about the planets, planetary
       configurations, constellations and learning of how they influence human life and behaviour as they move, shift or even stay still.</p> 
       </div>
       {/* CONTENT END */}

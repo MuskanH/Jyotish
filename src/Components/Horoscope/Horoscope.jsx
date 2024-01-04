@@ -126,14 +126,16 @@ const Horoscope = () => {
     }
     const [popUpToggle, setPopUpToggle] = useState(false);
   return (
-    <div className='lg:px-[60px] lg:py-[30px] md:px-[40px] '>
+    <div className=' lg:py-[30px] px-16 '>
            <h2 className= "text-amber-900 text-[26px] font-medium font-['Lexend'] heading">View your Horoscope</h2>
-            <div className='container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 pt-[39px]'>
+            <div className=' pt-[39px]'>
+                <div className='flex flex-row flex-wrap justify-between items-center'>
                 {
                     signs.map((sign, index)=>{
                         return(
                             <>
-                            <div className='py-[10px]'>
+                            
+                            <div className='py-[10px] '>
                             <div className='signCard w-[212px] h-[212px] bg-white rounded-[5px] shadow-inner border border-neutral-400 border-opacity-50 
                             flex flex-col justify-center items-center '  key={sign.index}  onClick={()=> changeContent(sign)} >
                               <img src={sign.sign} className="sign py-[5px]"/>
@@ -141,10 +143,12 @@ const Horoscope = () => {
                               <p className="time text-black text-[16px] font-bold font-['Lexend'] tracking-tight">{sign.time}</p>
                             </div>
                             </div>
+                           
                             </>
                         )
                     })
                 }
+                </div>
             </div>
             {popUpToggle && <> 
             {popUp.map((pop)=>{

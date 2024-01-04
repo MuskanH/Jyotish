@@ -154,12 +154,12 @@ const Blogs = () => {
           <div className="contentBox lg:py-[60px] lg:px-[70px] md:py-[40px] md:px-[44px] lg:flex lg:flex-row md:flex-col md:flex ">
             <img src='/img/image1.png' className=' lg:w-[790px] lg:h-[560px] md:w-[700px] md:h-[400px]' />
             <div className="flex flex-col lg:px-[20px] md:px-[10px]">
-              <p className="lg:w-[560px] lg:h-[132px] md:w-[700px] text-amber-900 lg:text-[26px] md:text-[20px] font-medium  font-['Lexend']">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.</p>
-              <p className="text-amber-500 text-[14px] font-semibold font-['Poppins'] lg:py-[36px] md:py-[10px]">20 December 2023</p>
-              <p className="lg:w-[560px] md:w-[700px] lg:h-[68px]  text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet. </p>
-              <p className="lg:w-[560px] md:w-[700px] lg:h-[43px]  text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal lg:py-[15px] md:py-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p className="lg:w-[560px] md:w-[700px] lg:h-[96px]  text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal lg:py-[30px] md:py-[6px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
-              <div className='lg:pt-[70px] md:pt-[15px]'>
+              <p className=" text-amber-900 lg:text-[26px] md:text-[20px] font-medium  font-['Lexend']">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.</p>
+              <p className="text-amber-500 text-[14px] font-semibold font-['Poppins'] lg:py-[14px] md:py-[10px]">20 December 2023</p>
+              <p className="  text-neutral-700 text-[16px] font-normal font-['Lexend'] lg:pt-[40px] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet. </p>
+              <p className=" text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal lg:py-[15px] md:py-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className=" text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal lg:py-[0px] md:py-[6px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
+              <div className='lg:pt-[36px] md:pt-[15px]'>
                 <button className="lg:w-[145px] lg:h-[45px] md:w-[100px] md:h-[30px] bg-amber-500 rounded-[40px] border border-amber-500 text-white lg:text-[16px] lg:font-medium md:text-xs md:font-light font-['Lexend'] ">Read More<ArrowForwardIosIcon sx={{ '@media (min-width:600px)': { fontSize: '12px', }, '@media (min-width:960px)': { fontSize: '24px', }, }} /></button>
               </div>
             </div>

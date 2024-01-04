@@ -37,19 +37,18 @@ const Report24 = () => {
   }
 
   return (
-    <div>
-      <p className="text-amber-900 text-[26px] font-medium font-['Lexend'] md:pl-[70px] md:pt-[74px]">2023 Yearly Report</p>
-      <div className='container lg:flex lg:flex-row md:flex md:flex-col'>
-        <div className='lg:py-[40px] md:py-[30px]'>
-        <img src='/img/report7.png' className='w-[676px] h-[393px] md:pl-[70px]'/>
+    <div className='px-16'>
+      <p className="text-amber-900 text-[26px] font-medium font-['Lexend'] py-7">2023 Yearly Report</p>
+      <div className='lg:flex lg:flex-row  lg:justify-between lg:space-x-10'>
+        <div className=''>
+        <img src='/img/report7.png' className='w-[170rem] h-[420px] '/>
         </div>
        
-        <div className='lg:pl-[20px] md:pl-[70px] lg:py-[36px]'>
-          <p className="w-[676px] h-[72px]          text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal">Placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla.  , vel feugiat nisi elit id massa. Proin nulla augue,Proin nulla augue dapibus.</p>
-          <p className="w-[676px] h-[72px] py-[5px] text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem .</p>
-          <p className="w-[676px] h-[96px] py-[5px] text-neutral-700 text-[16px] font-normal font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing elit.Lorem ipsum dolor sit  amet .</p>
-          <p className="w-[676px] h-[24px] py-[5px] text-neutral-700 text-[16px]e font-semibold font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <p className="w-[676px] h-[48px] py-[5px] text-neutral-700 text-[16px]e font-normal font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className=''>
+          <p className=" text-neutral-700 text-[16px] font-medium font-['Lexend'] leading-normal">Placerat commodo odio tincidunt iaculis. Sed felis magna, iaculis a metus id, ullamcorper suscipit nulla.  , vel feugiat nisi elit id massa. Proin nulla augue,Proin nulla augue dapibus.</p>
+          <p className="py-[5px] text-neutral-700 text-[16px]  font-medium font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem .</p>
+          <p className="py-[5px] text-neutral-700 text-[16px] font-medium font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit  amet,Lorem ipsum dolor sit amet elit, Lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing elit.Lorem ipsum dolor sit  amet .</p>
+          <p className="py-[5px] text-neutral-700 text-[16px] font-medium font-['Lexend'] leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         
       </div>

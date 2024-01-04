@@ -30,10 +30,10 @@ function App() {
    {/* <Cart/> */}
   
   
-   {/* <Testimonial/> */}
+   <Testimonial/>
    
     {/* <Horoscope/> */}
-    <Blogs/>
+    {/* <Blogs/> */}
     {/* <BlogDetails/> */}
     
     
